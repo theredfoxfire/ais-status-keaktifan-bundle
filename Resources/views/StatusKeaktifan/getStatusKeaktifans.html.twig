@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'status_keaktifan.list'|trans({}, 'AisStatusKeaktifanBundle') }}</h1>
+
+    <ul id="status_keaktifan-list">
+        {% for status_keaktifan in status_keaktifans %}
+            <li>
+                <a href="{{ path('api_1_get_status_keaktifan', {'id': status_keaktifan.id}) }}">{{ status_keaktifan.statuskeaktifan }}</a>
+                {#[<a href="{{ path('api_1_edit_status_keaktifans', {'id': status_keaktifan.id}) }}">{{ 'status_keaktifan.edit.link'|trans({}, 'AisStatusKeaktifanBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_status_keaktifans', {'id': status_keaktifan.id}) }}">{{ 'status_keaktifan.remove.link'|trans({}, 'AisStatusKeaktifanBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'status_keaktifan.list.empty'|trans({}, 'AisStatusKeaktifanBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_status_keaktifan') }}">{{ 'status_keaktifan.new.link'|trans({}, 'AisStatusKeaktifanBundle') }}</a>
+    </p>
+{% endblock %}

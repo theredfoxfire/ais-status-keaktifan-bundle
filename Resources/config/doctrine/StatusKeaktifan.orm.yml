@@ -1,0 +1,21 @@
+Ais\StatusKeaktifanBundle\Entity\StatusKeaktifan:
+ type: entity
+ table: status_keaktifan
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  mahasiswa_id:
+   type: integer
+  status_keaktifan:
+   type: integer
+   length: 2
+  semester_id:
+   type: integer
+  is_active:
+   type: boolean
+   nullable: true
+  is_delete:
+   type: boolean
+   nullable: true
