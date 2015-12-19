@@ -1,6 +1,7 @@
 Ais\StatusKeaktifanBundle\Entity\StatusKeaktifan:
  type: entity
  table: status_keaktifan
+ repositoryClass: Ais\StatusKeaktifanBundle\Repository\StatusKeaktifanRepository
  id:
   id: 
    type: integer
