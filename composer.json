@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/StatusKeaktifanBundle",
+    "name" : "ais/statuskeaktifanbundle",
     "description" : "A bundle filled with StatusKeaktifan",
     "type" : "symfony-bundle",
     "authors" : [{
